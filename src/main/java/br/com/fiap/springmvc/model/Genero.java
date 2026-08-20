@@ -3,15 +3,15 @@ package br.com.fiap.springmvc.model;
 public enum Genero {
     TERROR("TERROR"),
     ROMANCE("ROMANCE"),
-    ACAO("ACAO"),
+    ACAO("AÇÃO"),
     SUSPENSE("SUSPENSE"),
-    FICCAO_CIENTIFICA("FICCAO_CIENTIFICA"),
+    FICCAO_CIENTIFICA("FICÇÃO_CIENTIFICA"),
     BIOGRAFIA("BIOGRAFIA"),
     FILOSOFIA("FILOSOFIA"),
     RELIGIOSO("RELIGIOSO"),
-    HISTORIA("HISTORIA"),
-    CIENCIAS("CIENCIAS"),
-    DIDATICO("Didatico");
+    HISTORIA("HISTÓRIA"),
+    CIENCIAS("CIÊNCIAS"),
+    DIDATICO("DIDÁTICO");
 
     private final String descricao;
 
