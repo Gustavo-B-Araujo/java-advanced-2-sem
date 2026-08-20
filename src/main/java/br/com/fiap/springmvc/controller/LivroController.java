@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.Arrays;
+import java.util.List;
 
 @Controller
 @RequestMapping("/livros")
@@ -31,5 +32,12 @@ public class LivroController {
     public String cadastrar(Model model, Livro livro) {
         livroService.create(livro);
         return "livroLista";
+    }
+
+    @GetMapping("/lista")
+    public String lista(Model model) {
+        List<Livro> livros = livroService.readAll();
+        model.addAttribute("listaLivros", livros);
+        return "listaLivro";
     }
 }
